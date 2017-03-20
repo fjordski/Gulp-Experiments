@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('a').click(function(e){
 
-		alert('admin section');
+		alert('login section');
 		e.preventDefault();
 	});
 
