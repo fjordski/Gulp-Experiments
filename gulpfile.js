@@ -9,12 +9,12 @@ gulp.task('default', function(){
 //compile SASS to CSS
 gulp.task('css', function(){
 	return gulp.src(['./src/sass/main.scss'])
-				.pipe(plugins.sourcemaps.init())
-				.pipe(plugins.sass().on('error', plugins.sass.logError))
-				.pipe(plugins.cssmin())
-				.pipe(plugins.autoprefixer())
-				.pipe(plugins.sourcemaps.write())
-				.pipe(gulp.dest('./dist/css'));
+	.pipe(plugins.sourcemaps.init())
+	.pipe(plugins.sass().on('error', plugins.sass.logError))
+	.pipe(plugins.cssmin())
+	.pipe(plugins.autoprefixer())
+	.pipe(plugins.sourcemaps.write())
+	.pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('js', function(){
