@@ -20,8 +20,8 @@ gulp.task('css', function(){
 gulp.task('js', function(){
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.min.js',
-		'./src/js/magic.js',
-		'./src/js/admin.js'
+		'./src/js/main.js',
+		'./src/js/login.js'
 		])
 	.pipe(plugins.uglify())
 	.pipe(gulp.dest('./dist/js'));
