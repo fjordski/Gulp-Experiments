@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('a').click(function(e){
 
-		alert('magic');
+		alert('main');
 		e.preventDefault();
 	});
 
